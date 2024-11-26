@@ -1,0 +1,186 @@
+/* Variables */
+$primary-color: #007bff;
+$secondary-color: #333;
+$text-color: #2c3e50;
+$light-text-color: #7f8c8d;
+$background-color: #f4f4f4;
+$footer-background-color: #333;
+$footer-text-color: #ecf0f1;
+
+/* Global Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: $text-color;
+  background-color: $background-color;
+}
+
+/* Hero Section */
+.hero {
+  background-color: $background-color;
+  text-align: center;
+  padding: 60px 20px;
+  color: $text-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin-top: 0px;
+
+  .hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+
+    .left-side,
+    .right-side {
+      width: 50%;
+      text-align: left;
+    }
+  }
+
+  .hero-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: $text-color;
+  }
+
+  .hero-subtitle {
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: $light-text-color;
+  }
+
+  .cta-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    .cta-button {
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 30px;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+
+  .or-text {
+    margin: 0;
+    font-size: 16px;
+    color: $light-text-color;
+  }
+}
+
+/* Footer Styling */
+.footer-content {
+  background-color: $footer-background-color;
+  color: $footer-text-color;
+  padding: 15px 0;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+
+  .footer-links {
+    a {
+      color: $footer-text-color;
+      margin: 0 12px;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+/* Mobile Responsive Styles */
+
+/* For tablets and small laptops (width <= 768px) */
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 10px;
+
+    .hero-content {
+      flex-direction: column;
+
+      .left-side,
+      .right-side {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .hero-subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .cta-button {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+}
+
+/* For mobile devices (width <= 480px) */
+@media (max-width: 480px) {
+  .hero {
+    padding: 30px 10px;
+
+    .hero-title {
+      font-size: 28px;
+    }
+
+    .hero-subtitle {
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+
+    .cta-buttons {
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .cta-button {
+      font-size: 14px;
+      padding: 10px 16px;
+    }
+
+    .or-text {
+      font-size: 12px;
+    }
+  }
+
+  .footer-content {
+    padding: 10px 5px;
+    box-sizing: border-box; /* Ensure padding is accounted for in width */
+    margin-top: 20px; /* Ensure space between hero content and footer */
+  }
+
+  .footer-links a {
+    font-size: 14px;
+    display: inline-flex;
+  }
+}

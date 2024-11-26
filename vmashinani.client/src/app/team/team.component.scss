@@ -1,0 +1,158 @@
+#team {
+  background-color: #f4f6f8;
+  padding: 60px 0;
+  text-align: center;
+
+  .section-header {
+    margin-bottom: 20px;
+  }
+
+  .section-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #1d3557;
+    margin-bottom: 40px;
+  }
+  /* Team Cards */
+  .team-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 20px;
+    margin-top: 40px;
+    overflow-x: hidden;
+  }
+  /* Individual Team Card */
+  .team-card {
+    max-width: 350px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff;
+    overflow: hidden;
+    cursor: pointer;
+    transform: translateY(0);
+    margin-bottom: 25px;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+  }
+  /* Card Header (Image, Name, Position) */
+  mat-card-header {
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-bottom: 1px solid #f0f1f6;
+
+    .team-img {
+      border-radius: 50%;
+      width: 130px;
+      height: 130px;
+      margin: 0 auto;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .team-name {
+      font-size: 1.8rem;
+      color: #1d3557;
+      margin-top: 15px;
+      font-weight: 600;
+    }
+
+    .team-position {
+      font-size: 1.3rem;
+      color: #657786;
+      margin-top: 5px;
+      font-weight: 500;
+    }
+  }
+  /* Card Content (Job Description) */
+  mat-card-content {
+    padding: 20px;
+    text-align: center;
+
+    .job-description {
+      font-size: 1.1rem;
+      color: #5c6d77;
+      margin-top: 15px;
+      line-height: 1.6;
+      font-weight: 400;
+    }
+  }
+  /* Media Query for Tablets and Smaller Screens */
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 2rem; /* Adjust title font size */
+      margin-bottom: 30px; /* Reduce space below title */
+    }
+
+    .team-cards {
+      gap: 20px;
+    }
+
+    .team-card {
+      max-width: 90%;
+      margin-bottom: 20px;
+    }
+
+    .team-img {
+      width: 120px;
+      height: 120px;
+    }
+
+    .team-name {
+      font-size: 1.6rem;
+    }
+
+    .team-position {
+      font-size: 1.2rem;
+    }
+
+    .job-description {
+      font-size: 1rem;
+    }
+  }
+  /* Media Query for Mobile Phones */
+  @media (max-width: 480px) {
+    .section-title {
+      font-size: 1.6rem; /* Smaller font size for very small screens */
+      margin-bottom: 20px; /* Further reduce space below title */
+    }
+
+    .team-cards {
+      gap: 15px;
+    }
+
+    .team-card {
+      max-width: 100%;
+    }
+
+    .team-img {
+      width: 100px;
+      height: 100px;
+    }
+
+    .team-name {
+      font-size: 1.4rem;
+    }
+
+    .team-position {
+      font-size: 1rem;
+    }
+
+    .job-description {
+      font-size: 0.9rem;
+    }
+  }
+}

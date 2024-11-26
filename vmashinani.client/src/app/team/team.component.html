@@ -1,0 +1,23 @@
+<section id="team" class="team">
+  <!-- Section Title -->
+  <div class="section-header">
+    <h2 class="section-title">Our Team</h2>
+  </div>
+
+  <!-- Team Cards -->
+  <div class="team-cards">
+    <mat-card *ngFor="let member of teamMembers" class="team-card">
+      <mat-card-header>
+        <div mat-card-avatar class="team-img">
+          <img [src]="member.image" alt="{{ member.name }}" />
+        </div>
+        <mat-card-title class="team-name">{{ member.name }}</mat-card-title>
+        <mat-card-subtitle class="team-position">{{ member.position }}</mat-card-subtitle>
+      </mat-card-header>
+
+      <mat-card-content>
+        <p class="job-description">{{ member.description }}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</section>

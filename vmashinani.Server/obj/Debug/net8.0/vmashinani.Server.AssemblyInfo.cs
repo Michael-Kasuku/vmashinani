@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("5aa1ade6-ee17-4bb5-a7ce-dc0eedd64fbd")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("vmashinani.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ca2237e5534ad32faee852c22d894da2970716c")]
 [assembly: System.Reflection.AssemblyProductAttribute("vmashinani.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("vmashinani.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

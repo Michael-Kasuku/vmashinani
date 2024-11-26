@@ -1,0 +1,95 @@
+.services-section {
+  background-color: #f8f9fa;
+  padding: 2rem 1rem; // Default padding for small screens
+
+  @media (min-width: 600px) {
+    padding: 3rem 1.5rem; // Small screens
+  }
+
+  @media (min-width: 960px) {
+    padding: 4rem 2rem; // Medium screens
+  }
+
+  @media (min-width: 1280px) {
+    padding: 5rem 3rem; // Large screens
+  }
+}
+
+.services-title {
+  font-size: 2.8rem;
+  color: #007bff;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px; // Slightly increased spacing for a modern look
+}
+
+.services-description {
+  font-size: 1.2rem;
+  color: #6c757d;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto; // Centering the description for a more balanced layout
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.service-item {
+  flex-basis: 100%;
+  transition: all 0.3s ease;
+
+  @media (min-width: 600px) {
+    flex-basis: 48%; // Medium screens
+  }
+
+  @media (min-width: 960px) {
+    flex-basis: 30%; // Large screens
+  }
+
+  &:hover .service-card {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.service-card {
+  background-color: #fff;
+  padding: 2rem;
+  border: 1px solid #dee2e6;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  cursor: pointer;
+  overflow: hidden;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.service-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #343a40;
+  margin-bottom: 1rem;
+  letter-spacing: 1px; // Slightly increased spacing for a modern feel
+}
+
+.service-description {
+  font-size: 1.05rem;
+  color: #6c757d;
+  line-height: 1.6;
+  margin-bottom: 1.5rem; // Adds space before card's bottom
+}
