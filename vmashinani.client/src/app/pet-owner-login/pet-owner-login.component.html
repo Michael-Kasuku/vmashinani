@@ -1,20 +1,51 @@
-<section id="petownerlogin">
-  <div class="login-container">
-    <form class="login-form" method="post">
-      <h1 class="form-title">Welcome Back!</h1>
-      <div class="form-group">
-        <input class="form-control" type="text" name="username" placeholder="Username" required /><br />
-      </div>
-      <div class="form-group">
-        <input class="form-control" type="password" name="password" placeholder="Password" required /><br />
-      </div>
-      <button class="login-btn-primary" type="submit" name="btnPetOwnerLogin">
-        Login
-      </button>
-      <div class="text-center">
-        <p>Don't have an account? <a href="/petownersignup">Sign Up</a></p>
-        <a href="/petownerforgotpassword">Forgot Password?</a>
-      </div>
-    </form>
-  </div>
-</section>
+<div class="pet-owner-login-container">
+  <mat-card class="login-card">
+    <mat-card-header>
+      <mat-card-title class="title">Pet Owner Login</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Username</mat-label>
+          <input matInput
+                 type="text"
+                 [(ngModel)]="username"
+                 name="username"
+                 required
+                 #usernameField="ngModel" />
+          <mat-error *ngIf="usernameField.invalid && usernameField.touched">
+            Username is required.
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Password</mat-label>
+          <input matInput
+                 [type]="showPassword ? 'text' : 'password'"
+                 [(ngModel)]="password"
+                 name="password"
+                 required
+                 #passwordField="ngModel" />
+          <mat-error *ngIf="passwordField.invalid && passwordField.touched">
+            Password is required.
+          </mat-error>
+        </mat-form-field>
+
+        <mat-error *ngIf="submissionError" class="error-message">
+          {{ submissionError }}
+        </mat-error>
+
+        <button mat-raised-button color="primary" class="full-width login-btn" [disabled]="isLoading">
+          <mat-progress-spinner *ngIf="isLoading"
+                                mode="indeterminate"
+                                diameter="20"></mat-progress-spinner>
+          <span *ngIf="!isLoading">Login</span>
+        </button>
+      </form>
+    </mat-card-content>
+    <mat-card-actions class="actions">
+      <a routerLink="/pet-owner-signup">Sign Up</a>
+      <a routerLink="/pet-owner-forgot">Forgot Password?</a>
+    </mat-card-actions>
+  </mat-card>
+</div>

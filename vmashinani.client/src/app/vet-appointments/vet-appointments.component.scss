@@ -1,0 +1,140 @@
+/* Vet profile image styles */
+.vet-profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Row settings for wrapping and spacing */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the cards */
+}
+
+/* Card styling */
+.mat-card {
+  flex: 1 1 calc(33.333% - 1.5rem);
+  margin-bottom: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card hover effect */
+.mat-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the card header */
+.mat-card-header {
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Card title and subtitle styles */
+.mat-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.mat-card-subtitle {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Card content styles */
+.mat-card-content {
+  padding: 15px;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Button styles */
+.btn-book {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-book:hover {
+  background-color: #ffffff;
+}
+
+/* Ensuring responsive design */
+@media (max-width: 1024px) {
+  .mat-card {
+    flex: 1 1 calc(50% - 1.5rem); /* Adjust cards to fit 2 per row on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .mat-card {
+    flex: 1 1 calc(50% - 1rem); /* Adjust cards to fit 2 per row on smaller tablets */
+  }
+
+  .mat-card-title {
+    font-size: 1.1rem; /* Slightly smaller title on medium screens */
+  }
+
+  .mat-card-subtitle {
+    font-size: 0.9rem; /* Slightly smaller subtitle on medium screens */
+  }
+
+  .mat-card-content {
+    font-size: 0.95rem; /* Slightly smaller content text on medium screens */
+  }
+
+  .btn-book {
+    padding: 8px 15px; /* Adjust button size on smaller devices */
+  }
+}
+
+@media (max-width: 576px) {
+  .mat-card {
+    flex: 1 1 calc(100% - 1rem); /* Stack cards on smaller screens */
+    margin-bottom: 1rem; /* Reduced margin for better spacing */
+  }
+
+  .mat-card-header {
+    padding: 15px; /* Slightly reduced padding */
+  }
+
+  .mat-card-title {
+    font-size: 1.1rem; /* Adjust title for mobile screens */
+  }
+
+  .mat-card-subtitle {
+    font-size: 0.85rem; /* Adjust subtitle for mobile screens */
+  }
+
+  .mat-card-content {
+    font-size: 0.9rem; /* Adjust content text for mobile screens */
+  }
+
+  .btn-book {
+    padding: 6px 12px; /* Smaller button for mobile */
+    font-size: 0.9rem; /* Adjust font size for button text */
+  }
+
+  /* Reduce margins for smaller screens */
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* Optional: Adjust vet profile image for very small screens */
+  .vet-profile-img {
+    width: 60px;
+    height: 60px;
+  }
+}

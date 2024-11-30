@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // Required for Material animations
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -12,10 +12,23 @@ import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { HttpClientModule } from '@angular/common/http';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
-import { MatAccordion } from '@angular/material/expansion';
 import { MatButtonModule } from '@angular/material/button';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatTableModule } from '@angular/material/table';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatBadgeModule } from '@angular/material/badge';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatSelectModule } from '@angular/material/select';
+import { MatOptionModule } from '@angular/material/core'; // MatOption is included in MatSelectModule, but explicit imports are sometimes needed
+import { MatTabsModule } from '@angular/material/tabs';
+
 
 // Components
 import { AppComponent } from './app.component';
@@ -42,16 +55,14 @@ import { VetForgotPasswordComponent } from './vet-forgot-password/vet-forgot-pas
 import { VetDashboardComponent } from './vet-dashboard/vet-dashboard.component';
 import { VetMyProfileComponent } from './vet-my-profile/vet-my-profile.component';
 import { VetVetProfilesComponent } from './vet-vet-profiles/vet-vet-profiles.component';
-import { VetPetOwnerProfilesComponent } from './vet-pet-owner-profiles/vet-pet-owner-profiles.component';
 import { VetAppointmentsComponent } from './vet-appointments/vet-appointments.component';
 import { PetOwnerSignupComponent } from './pet-owner-signup/pet-owner-signup.component';
 import { PetOwnerForgotPasswordComponent } from './pet-owner-forgot-password/pet-owner-forgot-password.component';
 import { PetOwnerMyProfileComponent } from './pet-owner-my-profile/pet-owner-my-profile.component';
 import { PetOwnerVetProfilesComponent } from './pet-owner-vet-profiles/pet-owner-vet-profiles.component';
-import { PetOwnerPetOwnerProfilesComponent } from './pet-owner-pet-owner-profiles/pet-owner-pet-owner-profiles.component';
 import { PetOwnerAppointmentsComponent } from './pet-owner-appointments/pet-owner-appointments.component';
-import { AdminEnquiriesComponent } from './admin-enquiries/admin-enquiries.component';
 import { PetOwnerDashboardComponent } from './pet-owner-dashboard/pet-owner-dashboard.component';
+import { AdminEnquiriesComponent } from './admin-enquiries/admin-enquiries.component';
 
 @NgModule({
   declarations: [
@@ -79,20 +90,18 @@ import { PetOwnerDashboardComponent } from './pet-owner-dashboard/pet-owner-dash
     VetDashboardComponent,
     VetMyProfileComponent,
     VetVetProfilesComponent,
-    VetPetOwnerProfilesComponent,
     VetAppointmentsComponent,
     PetOwnerSignupComponent,
     PetOwnerForgotPasswordComponent,
     PetOwnerMyProfileComponent,
     PetOwnerVetProfilesComponent,
-    PetOwnerPetOwnerProfilesComponent,
     PetOwnerAppointmentsComponent,
-    AdminEnquiriesComponent,
     PetOwnerDashboardComponent,
+    AdminEnquiriesComponent,
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule, // Enable Angular Material animations
+    BrowserAnimationsModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
@@ -103,11 +112,22 @@ import { PetOwnerDashboardComponent } from './pet-owner-dashboard/pet-owner-dash
     MatIconModule,
     HttpClientModule,
     MatSnackBarModule,
-    MatAccordion,
     MatButtonModule,
     MatExpansionModule,
     MatDividerModule,
-
+    MatProgressSpinnerModule,
+    MatTableModule,
+    MatDialogModule,
+    MatBadgeModule,
+    MatMenuModule,
+    MatSidenavModule,
+    MatListModule,
+    MatGridListModule,
+    MatPaginatorModule,
+    MatProgressBarModule,
+    MatSelectModule,
+    MatOptionModule,
+    MatTabsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

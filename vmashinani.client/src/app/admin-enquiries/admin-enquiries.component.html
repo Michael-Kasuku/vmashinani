@@ -1,1 +1,45 @@
-<p>admin-enquiries works!</p>
+<div class="table-container">
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 custom-table">
+    <!-- ID Column -->
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef> ID </th>
+      <td mat-cell *matCellDef="let enquiry"> {{enquiry.id}} </td>
+    </ng-container>
+
+    <!-- Subject Column -->
+    <ng-container matColumnDef="subject">
+      <th mat-header-cell *matHeaderCellDef> Subject </th>
+      <td mat-cell *matCellDef="let enquiry"> {{enquiry.subject}} </td>
+    </ng-container>
+
+    <!-- Sent By Column -->
+    <ng-container matColumnDef="sent_by">
+      <th mat-header-cell *matHeaderCellDef> Sent By </th>
+      <td mat-cell *matCellDef="let enquiry"> {{enquiry.sent_by}} </td>
+    </ng-container>
+
+    <!-- Sender Email Column -->
+    <ng-container matColumnDef="sender_email">
+      <th mat-header-cell *matHeaderCellDef> Sender Email </th>
+      <td mat-cell *matCellDef="let enquiry"> {{enquiry.sender_email}} </td>
+    </ng-container>
+
+    <!-- Content Column -->
+    <ng-container matColumnDef="content">
+      <th mat-header-cell *matHeaderCellDef> Content </th>
+      <td mat-cell *matCellDef="let enquiry" class="content-cell"> {{enquiry.content}} </td>
+    </ng-container>
+
+    <!-- Time Sent Column -->
+    <ng-container matColumnDef="time_sent">
+      <th mat-header-cell *matHeaderCellDef> Time Sent </th>
+      <td mat-cell *matCellDef="let enquiry"> {{enquiry.time_sent}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+  <!-- Paginator -->
+  <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+</div>

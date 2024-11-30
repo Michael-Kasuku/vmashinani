@@ -1,0 +1,118 @@
+.pet-owner-login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #343a40;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+mat-form-field {
+  margin-bottom: 20px;
+}
+
+.login-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.error-message {
+  color: #d32f2f;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  color: #007bff;
+}
+
+.actions a {
+  font-size: 14px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.actions a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries for Small Screens */
+@media (max-width: 768px) {
+  .pet-owner-login-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .login-card {
+    max-width: 90%; /* Adjusts the card width for smaller screens */
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 20px; /* Reduces title size */
+    margin-bottom: 15px;
+  }
+
+  .login-btn {
+    font-size: 14px; /* Slightly smaller button text */
+    padding: 8px 16px;
+  }
+
+  .actions {
+    flex-direction: column; /* Stacks actions vertically */
+    align-items: center;
+  }
+
+  .actions a {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 15px; /* Further reduces padding */
+    box-shadow: none; /* Simplifies design for very small screens */
+  }
+
+  .title {
+    font-size: 18px; /* Further reduces title size */
+  }
+
+  .login-btn {
+    font-size: 12px; /* Even smaller button text */
+    padding: 6px 12px;
+  }
+
+  .actions {
+    margin-top: 10px;
+  }
+}

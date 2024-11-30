@@ -1,0 +1,88 @@
+.analytics-container {
+  padding: 20px;
+  background-color: #f8f9fa; // Light background for contrast
+  border-radius: 8px;
+
+  .mat-grid-list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; // Ensures cards wrap on smaller screens
+  }
+
+  .card-grid {
+    display: flex;
+    flex-wrap: wrap; // Enables responsiveness
+    gap: 20px; // Adds spacing between cards
+  }
+
+  .analytics-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px; // Set consistent width for cards
+    min-height: 150px; // Consistent minimum height
+    background: linear-gradient(135deg, #ffffff, #f0f0f0); // Subtle gradient background
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Elevation effect
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05); // Subtle zoom effect
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    mat-card-header {
+      text-align: center;
+      background-color: #007bff; // Primary theme color
+      color: white;
+      padding: 10px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+
+      mat-card-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+    }
+
+    mat-card-content {
+      text-align: center;
+      padding: 15px;
+      font-size: 1rem;
+      color: #333; // Darker text for readability
+    }
+  }
+  // Responsive adjustments for mobile
+  @media (max-width: 768px) {
+    .analytics-card {
+      width: 100%; // Full width on smaller screens
+      min-height: auto; // Allow flexible height
+    }
+
+    .card-grid {
+      justify-content: center; // Center cards on mobile
+      gap: 10px; // Reduce spacing for smaller screens
+    }
+  }
+
+  @media (max-width: 480px) {
+    .analytics-card {
+      padding: 10px; // Reduce padding for very small screens
+    }
+
+    .analytics-container {
+      padding: 10px; // Reduce container padding on small screens
+    }
+
+    mat-card-header {
+      mat-card-title {
+        font-size: 1rem; // Adjust font size for titles
+      }
+    }
+
+    mat-card-content {
+      font-size: 0.9rem; // Adjust content font size
+    }
+  }
+}

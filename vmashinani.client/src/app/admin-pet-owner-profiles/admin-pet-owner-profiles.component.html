@@ -1,1 +1,14 @@
-<p>admin-pet-owner-profiles works!</p>
+<section class="analytics-container mat-elevation-z8">
+  <div class="mat-grid-list-container">
+    <div class="card-grid">
+      <mat-card *ngFor="let card of analyticsCards" class="analytics-card">
+        <mat-card-header>
+          <mat-card-title>{{ card.title }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>{{ card.value }}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</section>

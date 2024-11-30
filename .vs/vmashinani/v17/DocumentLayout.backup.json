@@ -1,28 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{0D2B2E41-0488-4E46-B746-49368C55696A}|vmashinani.client\\vmashinani.client.esproj|c:\\users\\michael kasuku\\documents\\computer science\\fourth year\\web development\\project\\vmashinani\\vmashinani.client\\src\\app\\faqs\\faqs.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{0D2B2E41-0488-4E46-B746-49368C55696A}|vmashinani.client\\vmashinani.client.esproj|solutionrelative:vmashinani.client\\src\\app\\faqs\\faqs.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0D2B2E41-0488-4E46-B746-49368C55696A}|vmashinani.client\\vmashinani.client.esproj|c:\\users\\michael kasuku\\documents\\computer science\\fourth year\\web development\\project\\vmashinani\\vmashinani.client\\src\\app\\faqs\\faqs.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0D2B2E41-0488-4E46-B746-49368C55696A}|vmashinani.client\\vmashinani.client.esproj|solutionrelative:vmashinani.client\\src\\app\\faqs\\faqs.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0D2B2E41-0488-4E46-B746-49368C55696A}|vmashinani.client\\vmashinani.client.esproj|c:\\users\\michael kasuku\\documents\\computer science\\fourth year\\web development\\project\\vmashinani\\vmashinani.client\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{0D2B2E41-0488-4E46-B746-49368C55696A}|vmashinani.client\\vmashinani.client.esproj|solutionrelative:vmashinani.client\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0D2B2E41-0488-4E46-B746-49368C55696A}|vmashinani.client\\vmashinani.client.esproj|c:\\users\\michael kasuku\\documents\\computer science\\fourth year\\web development\\project\\vmashinani\\vmashinani.client\\src\\app\\faqs\\faqs.component.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}",
-      "RelativeMoniker": "D:0:0:{0D2B2E41-0488-4E46-B746-49368C55696A}|vmashinani.client\\vmashinani.client.esproj|solutionrelative:vmashinani.client\\src\\app\\faqs\\faqs.component.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0D2B2E41-0488-4E46-B746-49368C55696A}|vmashinani.client\\vmashinani.client.esproj|c:\\users\\michael kasuku\\documents\\computer science\\fourth year\\web development\\project\\vmashinani\\vmashinani.client\\src\\app\\faqs\\faqs.component.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{0D2B2E41-0488-4E46-B746-49368C55696A}|vmashinani.client\\vmashinani.client.esproj|solutionrelative:vmashinani.client\\src\\app\\faqs\\faqs.component.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -30,73 +9,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "faqs.component.scss",
-              "DocumentMoniker": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.client\\src\\app\\faqs\\faqs.component.scss",
-              "RelativeDocumentMoniker": "vmashinani.client\\src\\app\\faqs\\faqs.component.scss",
-              "ToolTip": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.client\\src\\app\\faqs\\faqs.component.scss",
-              "RelativeToolTip": "vmashinani.client\\src\\app\\faqs\\faqs.component.scss",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAowCcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002663|",
-              "WhenOpened": "2024-11-26T10:33:53.773Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "faqs.component.html",
-              "DocumentMoniker": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.client\\src\\app\\faqs\\faqs.component.html",
-              "RelativeDocumentMoniker": "vmashinani.client\\src\\app\\faqs\\faqs.component.html",
-              "ToolTip": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.client\\src\\app\\faqs\\faqs.component.html",
-              "RelativeToolTip": "vmashinani.client\\src\\app\\faqs\\faqs.component.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-11-26T10:31:29.624Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "faqs.component.ts",
-              "DocumentMoniker": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.client\\src\\app\\faqs\\faqs.component.ts",
-              "RelativeDocumentMoniker": "vmashinani.client\\src\\app\\faqs\\faqs.component.ts",
-              "ToolTip": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.client\\src\\app\\faqs\\faqs.component.ts",
-              "RelativeToolTip": "vmashinani.client\\src\\app\\faqs\\faqs.component.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-11-26T10:29:45.789Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "faqs.component.spec.ts",
-              "DocumentMoniker": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.client\\src\\app\\faqs\\faqs.component.spec.ts",
-              "RelativeDocumentMoniker": "vmashinani.client\\src\\app\\faqs\\faqs.component.spec.ts",
-              "ToolTip": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.client\\src\\app\\faqs\\faqs.component.spec.ts",
-              "RelativeToolTip": "vmashinani.client\\src\\app\\faqs\\faqs.component.spec.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-11-26T10:29:17.849Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "app.module.ts",
-              "DocumentMoniker": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.client\\src\\app\\app.module.ts",
-              "RelativeDocumentMoniker": "vmashinani.client\\src\\app\\app.module.ts",
-              "ToolTip": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.client\\src\\app\\app.module.ts",
-              "RelativeToolTip": "vmashinani.client\\src\\app\\app.module.ts",
-              "ViewState": "AgIAACwAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-11-26T09:42:31.07Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"

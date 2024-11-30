@@ -1,1 +1,23 @@
-<p>pet-owner-vet-profiles works!</p>
+<section class="container py-5">
+  <div class="mat-elevation-z8">
+    <!-- Material Card Layout for each vet -->
+    <div class="row d-flex flex-wrap justify-content-center">
+      <mat-card class="col-md-4 mb-4" *ngFor="let vet of vetProfiles">
+        <!-- Profile Image -->
+        <mat-card-header class="text-center">
+          <img mat-card-avatar [src]="vet.profilePictureUrl" alt="{{ vet.name }}'s profile" class="vet-profile-img">
+          <mat-card-title class="mt-2">{{ vet.name }}</mat-card-title>
+          <mat-card-subtitle>{{ vet.specialization }}</mat-card-subtitle>
+        </mat-card-header>
+
+        <mat-card-content>
+          <p><strong>Location:</strong> {{ vet.location }}</p>
+        </mat-card-content>
+
+        <mat-card-actions class="text-center">
+          <button mat-raised-button color="primary" class="btn-book" (click)="BookAppointment(vet.id)">Book Appointment</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</section>

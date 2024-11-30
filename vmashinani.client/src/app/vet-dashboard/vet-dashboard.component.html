@@ -1,1 +1,22 @@
-<p>vet-dashboard works!</p>
+<mat-toolbar color="primary" class="header-toolbar">
+  <span class="title">Vet Mashinani</span>
+  <!-- Profile Menu -->
+  <button mat-icon-button [matMenuTriggerFor]="profileMenu" aria-label="Profile" class="profile-button">
+    <img src="/img/team/kasuku.png" alt="Profile" class="profile-image">
+  </button>
+
+  <mat-menu #profileMenu="matMenu" class="profile-menu">
+    <button mat-menu-item (click)="goToProfile()">My Profile</button>
+    <button mat-menu-item (click)="logout()">Logout</button>
+  </mat-menu>
+</mat-toolbar>
+
+<!-- Horizontal Navigation Menu -->
+<mat-tab-group [(selectedIndex)]="activeTab" class="tab-group">
+  <mat-tab label="Vets">
+    <app-vet-vet-profiles></app-vet-vet-profiles>
+  </mat-tab>
+  <mat-tab label="Appointments">
+    <app-vet-appointments></app-vet-appointments>
+  </mat-tab>
+</mat-tab-group>

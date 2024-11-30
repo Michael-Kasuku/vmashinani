@@ -24,15 +24,12 @@ import { VetForgotPasswordComponent } from './vet-forgot-password/vet-forgot-pas
 import { VetDashboardComponent } from './vet-dashboard/vet-dashboard.component';
 import { VetMyProfileComponent } from './vet-my-profile/vet-my-profile.component';
 import { VetVetProfilesComponent } from './vet-vet-profiles/vet-vet-profiles.component';
-import { VetPetOwnerProfilesComponent } from './vet-pet-owner-profiles/vet-pet-owner-profiles.component';
 import { VetAppointmentsComponent } from './vet-appointments/vet-appointments.component';
 import { PetOwnerSignupComponent } from './pet-owner-signup/pet-owner-signup.component';
 import { PetOwnerForgotPasswordComponent } from './pet-owner-forgot-password/pet-owner-forgot-password.component';
 import { PetOwnerMyProfileComponent } from './pet-owner-my-profile/pet-owner-my-profile.component';
 import { PetOwnerVetProfilesComponent } from './pet-owner-vet-profiles/pet-owner-vet-profiles.component';
-import { PetOwnerPetOwnerProfilesComponent } from './pet-owner-pet-owner-profiles/pet-owner-pet-owner-profiles.component';
 import { PetOwnerAppointmentsComponent } from './pet-owner-appointments/pet-owner-appointments.component';
-import { AdminEnquiriesComponent } from './admin-enquiries/admin-enquiries.component';
 import { PetOwnerDashboardComponent } from './pet-owner-dashboard/pet-owner-dashboard.component';
 
 const routes: Routes = [
@@ -47,7 +44,6 @@ const routes: Routes = [
   { path: 'admin-login', component: AdminLoginComponent },
   { path: 'admin-signup', component: AdminSignupComponent },
   { path: 'admin-forgot', component: AdminForgotPasswordComponent },
-  { path: 'admin-enquiries', component: AdminEnquiriesComponent },
   { path: 'admin-dashboard', component: AdminDashboardComponent },
   { path: 'admin-my-profile', component: AdminMyProfileComponent },
   { path: 'admin-vet-profiles', component: AdminVetProfilesComponent },
@@ -59,7 +55,6 @@ const routes: Routes = [
   { path: 'vet-dashboard', component: VetDashboardComponent },
   { path: 'vet-my-profile', component: VetMyProfileComponent },
   { path: 'vet-vet-profiles', component: VetVetProfilesComponent },
-  { path: 'vet-pet-owner-profiles', component: VetPetOwnerProfilesComponent },
   { path: 'vet-appointments', component: VetAppointmentsComponent },
   { path: 'pet-owner-login', component: PetOwnerLoginComponent },
   { path: 'pet-owner-signup', component: PetOwnerSignupComponent },
@@ -67,7 +62,6 @@ const routes: Routes = [
   { path: 'pet-owner-dashboard', component: PetOwnerDashboardComponent },
   { path: 'pet-owner-my-profile', component: PetOwnerMyProfileComponent },
   { path: 'pet-owner-vet-profiles', component: PetOwnerVetProfilesComponent },
-  { path: 'pet-owner-pet-owner-profiles', component: PetOwnerPetOwnerProfilesComponent },
   { path: 'pet-owner-appointments', component: PetOwnerAppointmentsComponent },
 ];
 

@@ -1,1 +1,51 @@
-<p>Admin Works</p>
+<div class="admin-login-container">
+  <mat-card class="login-card">
+    <mat-card-header>
+      <mat-card-title class="title">Admin Login</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Username</mat-label>
+          <input matInput
+                 type="text"
+                 [(ngModel)]="username"
+                 name="username"
+                 required
+                 #usernameField="ngModel" />
+          <mat-error *ngIf="usernameField.invalid && usernameField.touched">
+            Username is required.
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Password</mat-label>
+          <input matInput
+                 [type]="showPassword ? 'text' : 'password'"
+                 [(ngModel)]="password"
+                 name="password"
+                 required
+                 #passwordField="ngModel" />
+          <mat-error *ngIf="passwordField.invalid && passwordField.touched">
+            Password is required.
+          </mat-error>
+        </mat-form-field>
+
+        <mat-error *ngIf="submissionError" class="error-message">
+          {{ submissionError }}
+        </mat-error>
+
+        <button mat-raised-button color="primary" class="full-width login-btn" [disabled]="isLoading">
+          <mat-progress-spinner *ngIf="isLoading"
+                                mode="indeterminate"
+                                diameter="20"></mat-progress-spinner>
+          <span *ngIf="!isLoading">Login</span>
+        </button>
+      </form>
+    </mat-card-content>
+    <mat-card-actions class="actions">
+      <a routerLink="/admin-signup">Sign Up</a>
+      <a routerLink="/admin-forgot">Forgot Password?</a>
+    </mat-card-actions>
+  </mat-card>
+</div>

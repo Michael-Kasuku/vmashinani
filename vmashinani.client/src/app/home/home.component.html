@@ -9,9 +9,9 @@
       </div>
       <div class="right-side">
         <div class="cta-buttons">
-          <a href="/vet-login" class="cta-button">Continue as a Vet</a>
+          <a [routerLink]="['/vet-login']" class="cta-button">Continue as a Vet</a>
           <h6 class="or-text">or</h6>
-          <a href="/pet-owner-login" class="cta-button">Continue as a Pet Owner</a>
+          <a  [routerLink]="['/pet-owner-login']" class="cta-button">Continue as a Pet Owner</a>
         </div>
       </div>
     </div>
@@ -22,12 +22,12 @@
 <div class="footer-content">
   <p>&copy; 2024 <strong>Vet Mashinani</strong>. All Rights Reserved.</p>
   <nav class="footer-links">
-    <a href="/about-us">About Us</a>
-    <a href="/our-services">Our Services</a>
-    <a href="/our-team">Our Team</a>
-    <a href="/contact-us">Contact Us</a>
-    <a href="/faqs">FAQs</a>
-    <a href="/privacy-policy">Privacy Policy</a>
-    <a href="/terms-of-service">Terms of Service</a>
+    <a [routerLink]="['/about-us']">About Us</a>
+    <a [routerLink]="['/our-services']">Our Services</a>
+    <a [routerLink]="['/our-team']">Our Team</a>
+    <a [routerLink]="['/contact-us']">Contact Us</a>
+    <a [routerLink]="['/faqs']">FAQs</a>
+    <a [routerLink]="['/privacy-policy']">Privacy Policy</a>
+    <a [routerLink]="['/terms-of-service']">Terms of Service</a>
   </nav>
 </div>
