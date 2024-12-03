@@ -1,5 +1,52 @@
+using vmashinani.Server.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using vmashinani.Server.DTO;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+
 // Create a web application builder
 var builder = WebApplication.CreateBuilder(args);
+
+// Add ApplicationDbContext and SQL Server support
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+ options.UseSqlServer(
+ builder.Configuration.GetConnectionString("DefaultConnection")
+ )
+);
+
+// Add ASP.NET Core Identity support
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
+{
+    options.SignIn.RequireConfirmedAccount = true;
+    options.Password.RequireDigit = true;
+    options.Password.RequireLowercase = true;
+    options.Password.RequireUppercase = true;
+    options.Password.RequireNonAlphanumeric = true;
+    options.Password.RequiredLength = 8;
+})
+ .AddEntityFrameworkStores<ApplicationDbContext>();
+
+// Add Authentication services & middlewares
+builder.Services.AddAuthentication(opt =>
+{
+opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+opt.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(options =>
+{
+options.TokenValidationParameters = new TokenValidationParameters
+{
+    RequireExpirationTime = true,
+    ValidateIssuer = true,
+    ValidateAudience = true,
+    ValidateLifetime = true,
+    ValidateIssuerSigningKey = true,
+    ValidIssuer = builder.Configuration["JwtSettings:Issuer"],
+    ValidAudience = builder.Configuration["JwtSettings:Audience"],
+    IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.
+GetBytes(builder.Configuration["JwtSettings:SecurityKey"]!))
+};
+});
 
 // Add support for API controllers
 builder.Services.AddControllers();
@@ -19,9 +66,19 @@ builder.Services.AddCors(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+//JwtHandler added via Dependency Injection
+builder.Services.AddScoped<JwtHandler>();
+
 // Build the application
 var app = builder.Build();
 
+// Apply pending database migrations on startup
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var context = services.GetRequiredService<ApplicationDbContext>();
+    context.Database.Migrate();
+}
 
 // Optional: Enable Swagger UI in development mode
 if (app.Environment.IsDevelopment())
@@ -41,6 +98,9 @@ app.UseHttpsRedirection();
 
 // Enable routing for the application
 app.UseRouting();
+
+app.UseAuthentication();
+app.UseAuthorization();
 
 // Use CORS policy defined earlier
 app.UseCors("AllowAll");

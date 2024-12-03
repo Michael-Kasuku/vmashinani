@@ -28,6 +28,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatSelectModule } from '@angular/material/select';
 import { MatOptionModule } from '@angular/material/core'; // MatOption is included in MatSelectModule, but explicit imports are sometimes needed
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatRadioModule } from '@angular/material/radio';
 
 
 // Components
@@ -128,6 +129,8 @@ import { AdminEnquiriesComponent } from './admin-enquiries/admin-enquiries.compo
     MatSelectModule,
     MatOptionModule,
     MatTabsModule,
+    MatRadioModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent],

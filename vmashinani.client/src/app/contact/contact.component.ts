@@ -10,10 +10,10 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 export class ContactComponent {
   formData = {
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
+    Name: '',
+    Email: '',
+    Subject: '',
+    Content: '',
   };
 
   constructor(private http: HttpClient, private snackBar: MatSnackBar) { }
@@ -22,10 +22,10 @@ export class ContactComponent {
     event.preventDefault();
 
     if (
-      !this.formData.name ||
-      !this.formData.email ||
-      !this.formData.subject ||
-      !this.formData.message
+      !this.formData.Name ||
+      !this.formData.Email ||
+      !this.formData.Subject ||
+      !this.formData.Content
     ) {
       this.openSnackbar('All fields are required.', 'error');
       return;
@@ -33,10 +33,10 @@ export class ContactComponent {
 
     this.http
       .post('https://localhost:40443/api/messages', {
-        Name: this.formData.name,
-        SenderEmailAddress: this.formData.email,
-        Subject: this.formData.subject,
-        MessageContent: this.formData.message,
+        Name: this.formData.Name,
+        Email: this.formData.Email,
+        Subject: this.formData.Subject,
+        Content: this.formData.Content,
       })
       .subscribe(
         () => {
@@ -59,10 +59,10 @@ export class ContactComponent {
 
   resetForm() {
     this.formData = {
-      name: '',
-      email: '',
-      subject: '',
-      message: '',
+      Name: '',
+      Email: '',
+      Subject: '',
+      Content: '',
     };
   }
 
