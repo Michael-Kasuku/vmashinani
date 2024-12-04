@@ -1,107 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.Server\\Migrations\\20241203113103_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:vmashinani.Server\\Migrations\\20241203113103_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64CB1EB5-4151-4A98-A67B-8300F136A43E}|vmashinani.Server\\vmashinani.Server.csproj|c:\\users\\michael kasuku\\documents\\computer science\\fourth year\\web development\\project\\vmashinani\\vmashinani.server\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64CB1EB5-4151-4A98-A67B-8300F136A43E}|vmashinani.Server\\vmashinani.Server.csproj|solutionrelative:vmashinani.server\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64CB1EB5-4151-4A98-A67B-8300F136A43E}|vmashinani.Server\\vmashinani.Server.csproj|c:\\users\\michael kasuku\\documents\\computer science\\fourth year\\web development\\project\\vmashinani\\vmashinani.server\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64CB1EB5-4151-4A98-A67B-8300F136A43E}|vmashinani.Server\\vmashinani.Server.csproj|solutionrelative:vmashinani.server\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0D2B2E41-0488-4E46-B746-49368C55696A}|vmashinani.client\\vmashinani.client.esproj|c:\\users\\michael kasuku\\documents\\computer science\\fourth year\\web development\\project\\vmashinani\\vmashinani.client\\src\\app\\admin-signup\\admin-signup.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{0D2B2E41-0488-4E46-B746-49368C55696A}|vmashinani.client\\vmashinani.client.esproj|solutionrelative:vmashinani.client\\src\\app\\admin-signup\\admin-signup.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0D2B2E41-0488-4E46-B746-49368C55696A}|vmashinani.client\\vmashinani.client.esproj|c:\\users\\michael kasuku\\documents\\computer science\\fourth year\\web development\\project\\vmashinani\\vmashinani.client\\src\\app\\contact\\contact.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{0D2B2E41-0488-4E46-B746-49368C55696A}|vmashinani.client\\vmashinani.client.esproj|solutionrelative:vmashinani.client\\src\\app\\contact\\contact.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20241203113103_InitialCreate.cs",
-              "DocumentMoniker": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.Server\\Migrations\\20241203113103_InitialCreate.cs",
-              "RelativeDocumentMoniker": "vmashinani.Server\\Migrations\\20241203113103_InitialCreate.cs",
-              "ToolTip": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.Server\\Migrations\\20241203113103_InitialCreate.cs",
-              "RelativeToolTip": "vmashinani.Server\\Migrations\\20241203113103_InitialCreate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T11:31:07.463Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.Server\\Models\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "vmashinani.Server\\Models\\ApplicationUser.cs",
-              "ToolTip": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.Server\\Models\\ApplicationUser.cs",
-              "RelativeToolTip": "vmashinani.Server\\Models\\ApplicationUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T15:41:32.542Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "contact.component.ts",
-              "DocumentMoniker": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.client\\src\\app\\contact\\contact.component.ts",
-              "RelativeDocumentMoniker": "vmashinani.client\\src\\app\\contact\\contact.component.ts",
-              "ToolTip": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.client\\src\\app\\contact\\contact.component.ts",
-              "RelativeToolTip": "vmashinani.client\\src\\app\\contact\\contact.component.ts",
-              "ViewState": "AgIAABcAAAAAAAAAAAAAACcAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-12-02T12:39:44.589Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "admin-signup.component.ts",
-              "DocumentMoniker": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.client\\src\\app\\admin-signup\\admin-signup.component.ts",
-              "RelativeDocumentMoniker": "vmashinani.client\\src\\app\\admin-signup\\admin-signup.component.ts",
-              "ToolTip": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.client\\src\\app\\admin-signup\\admin-signup.component.ts",
-              "RelativeToolTip": "vmashinani.client\\src\\app\\admin-signup\\admin-signup.component.ts",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAAwFsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-12-02T12:37:26.372Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.Server\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "vmashinani.Server\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.Server\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "vmashinani.Server\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T12:34:39.379Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
