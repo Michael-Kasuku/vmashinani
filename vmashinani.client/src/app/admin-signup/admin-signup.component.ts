@@ -41,22 +41,31 @@ export class AdminSignupComponent {
       return;
     }
 
+    // Password Length and Alphanumeric Validation
+    const passwordRegex = /^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
+    if (!passwordRegex.test(this.formData.PasswordHash)) {
+      this.openSnackbar(
+        'Password must be at least 8 characters long and contain both letters and numbers.',
+        'error'
+      );
+      return;
+    }
+
     // Password Match Validation
     if (this.formData.PasswordHash !== this.formData.ConfirmPassword) {
       this.openSnackbar('Passwords do not match.', 'error');
       return;
     }
 
-
     // HTTP Request
     this.http.post('https://localhost:40443/api/admin/createadmin',
-    {
-            FullName: this.formData.FullName,
-            JobTitle: this.formData.JobTitle,
-            Location: this.formData.Location,
-            Email: this.formData.Email,
-            PasswordHash: this.formData.PasswordHash
-          }
+      {
+        FullName: this.formData.FullName,
+        JobTitle: this.formData.JobTitle,
+        Location: this.formData.Location,
+        Email: this.formData.Email,
+        PasswordHash: this.formData.PasswordHash
+      }
     ).subscribe(
       () => {
         this.openSnackbar('Account created successfully!', 'success');
@@ -71,7 +80,7 @@ export class AdminSignupComponent {
           const errorMessages = error.error.errors.map((err: any) => err.description).join('\n');
           this.openSnackbar(errorMessages, 'error');
         } else {
-          this.openSnackbar('Error in creating account. Please try again.', 'error');
+          this.openSnackbar('Error in creating Admin Account. Please try again.', 'error');
         }
       }
     );

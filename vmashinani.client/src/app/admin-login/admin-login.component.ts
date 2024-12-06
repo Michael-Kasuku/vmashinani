@@ -1,51 +1,67 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-admin-login',
   standalone:false,
   templateUrl: './admin-login.component.html',
-  styleUrls: ['./admin-login.component.scss']
+  styleUrls: ['./admin-login.component.scss'],
 })
 export class AdminLoginComponent {
-  username = '';
-  password = '';
-  showPassword = false;
-  isLoading = false;
-  submissionError = '';
+  formData = {
+    Email: '',
+    PasswordHash: '',
+  };
 
-  constructor(private router: Router, private http: HttpClient) { }
+  constructor(
+    private http: HttpClient,
+    private snackBar: MatSnackBar,
+    private router: Router
+  ) { }
 
-  togglePasswordVisibility(): void {
-    this.showPassword = !this.showPassword;
-  }
+  handleLogin(event: Event) {
+    event.preventDefault();
 
-  onSubmit(): void {
-    if (!this.username || !this.password) {
-      this.submissionError = 'Username and password are required.';
+    // Basic Validation
+    if (!this.formData.Email || !this.formData.PasswordHash) {
+      this.openSnackbar('Both fields are required.', 'error');
       return;
     }
 
-    this.isLoading = true;
-    this.submissionError = '';
-
-    this.http
-      .post('https://localhost:40443/api/admin-login', {
-        username: this.username,
-        password: this.password
-      })
+    // HTTP Request for Login
+    this.http.post('https://localhost:40443/api/admin/login', {
+      Email: this.formData.Email,
+      PasswordHash: this.formData.PasswordHash,
+    })
       .subscribe(
-        () => {
-          this.isLoading = false;
-          alert('Login successful');
-          this.router.navigate(['/admin-dashboard']);
+        (response: any) => {
+          // Handle successful login, assuming a token is returned
+          localStorage.setItem('adminToken', response.token); // Save the token locally
+          this.openSnackbar('Login successful!', 'success');
+          this.router.navigate(['/admin-dashboard']); // Redirect to admin dashboard
         },
         (error) => {
-          this.isLoading = false;
-          this.submissionError =
-            error.error?.message || 'Login failed. Please try again.';
+          // Handle error response
+          if (error.error && error.error.message) {
+            this.openSnackbar(error.error.message, 'error');
+          } else {
+            this.openSnackbar('Login failed. Please check your credentials.', 'error');
+          }
         }
       );
+  }
+
+  openSnackbar(message: string, severity: 'success' | 'error') {
+    const snackBarClass = severity === 'success' ? 'snackbar-success' : 'snackbar-error';
+    this.snackBar.open(message, 'Close', {
+      duration: 3000,
+      panelClass: snackBarClass,
+    });
+  }
+
+  closeSnackbar() {
+    this.snackBar.dismiss();
   }
 }

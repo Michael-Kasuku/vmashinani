@@ -6,7 +6,7 @@ namespace vmashinani.Server.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
-    public class AdminController : ControllerBase
+    public class PetOwnerController : ControllerBase
     {
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly UserManager<ApplicationUser> _userManager;
@@ -14,7 +14,7 @@ namespace vmashinani.Server.Controllers
         private readonly IWebHostEnvironment _env;
         private readonly IConfiguration _configuration;
 
-        public AdminController(
+        public PetOwnerController(
             ApplicationDbContext context,
             RoleManager<IdentityRole> roleManager,
             UserManager<ApplicationUser> userManager,
@@ -29,28 +29,14 @@ namespace vmashinani.Server.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateAdmin([FromBody] ApplicationUser newUser)
+        public async Task<IActionResult> CreatePetOwner([FromBody] ApplicationUser newUser)
         {
-            string roleAdministrator = "Administrator";
             string rolePetOwner = "Pet Owner";
-
-            // Check if the email exists in the Administrators table
-            var isAdminEmailValid = _context.Administrators.Any(admin => admin.Email == newUser.Email);
-            if (!isAdminEmailValid)
-            {
-                return BadRequest(new { message = "You are not allowed to register as an Admin!" });
-            }
 
             // Ensure the "Pet Owner" role exists
             if (await _roleManager.FindByNameAsync(rolePetOwner) == null)
             {
                 await _roleManager.CreateAsync(new IdentityRole(rolePetOwner));
-            }
-
-            // Ensure the "Administrator" role exists
-            if (await _roleManager.FindByNameAsync(roleAdministrator) == null)
-            {
-                await _roleManager.CreateAsync(new IdentityRole(roleAdministrator));
             }
 
             // Check if the user already exists
@@ -59,8 +45,8 @@ namespace vmashinani.Server.Controllers
                 return Conflict(new { message = "User Account already exists!" });
             }
 
-            // Create the new admin user
-            var userAdmin = new ApplicationUser
+            // Create the new Pet Owner user
+            var userPetOwner = new ApplicationUser
             {
                 SecurityStamp = Guid.NewGuid().ToString(),
                 FullName = newUser.FullName,
@@ -73,18 +59,15 @@ namespace vmashinani.Server.Controllers
             };
 
             //Assign  the Password to the User
-            await _userManager.CreateAsync(userAdmin, newUser.PasswordHash);
+            await _userManager.CreateAsync(userPetOwner, newUser.PasswordHash);
 
-            // Assign the "Administrator" role
-            await _userManager.AddToRoleAsync(userAdmin, roleAdministrator);
-
-            // An "Administrator" automatically becomes a Pet Owner
-            await _userManager.AddToRoleAsync(userAdmin, rolePetOwner);
+            // Assign the "Pet Owner" role
+            await _userManager.AddToRoleAsync(userPetOwner, rolePetOwner);
 
             // Save changes again after role assignment
             await _context.SaveChangesAsync();
 
-            return Ok(new { message = "Admin Account created successfully!", user = userAdmin });
+            return Ok(new { message = "Pet Owner Account created successfully!", user = userPetOwner });
         }
     }
 }

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("vmashinani.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aa8763680b8fba8b5fd3f1b39c8156a5d04801f3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+888b49bd08c360aee2e769257b0e1f6e411553b0")]
 [assembly: System.Reflection.AssemblyProductAttribute("vmashinani.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("vmashinani.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

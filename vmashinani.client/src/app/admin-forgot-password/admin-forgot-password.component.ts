@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-admin-forgot-password',
@@ -10,58 +10,53 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./admin-forgot-password.component.scss'],
 })
 export class AdminForgotPasswordComponent {
-  forgotPasswordForm: FormGroup;
-  isLoading = false;
-  submissionError: string = '';
+  formData = {
+    Email: ''
+  };
 
   constructor(
-    private fb: FormBuilder,
     private http: HttpClient,
+    private snackBar: MatSnackBar,
     private router: Router
-  ) {
-    this.forgotPasswordForm = this.fb.group({
-      email: ['', [Validators.required, Validators.email]],
+  ) { }
+
+  handlePasswordReset(event: Event) {
+    event.preventDefault();
+
+    // Basic Validation
+    if (!this.formData.Email ) {
+      this.openSnackbar('Email address is required.', 'error');
+      return;
+    }
+
+    // HTTP Request for Password Reset
+    this.http.post('https://localhost:40443/api/admin/forgotpassword', {
+      Email: this.formData.Email
+    })
+      .subscribe(
+        (response: any) => {
+          this.openSnackbar('Password Reset Link has been sent to your email!', 'success');
+        },
+        (error) => {
+          // Handle error response
+          if (error.error && error.error.message) {
+            this.openSnackbar(error.error.message, 'error');
+          } else {
+            this.openSnackbar('Password Reset Link couldn\'t be sent to your email!', 'error');
+          }
+        }
+      );
+  }
+
+  openSnackbar(message: string, severity: 'success' | 'error') {
+    const snackBarClass = severity === 'success' ? 'snackbar-success' : 'snackbar-error';
+    this.snackBar.open(message, 'Close', {
+      duration: 3000,
+      panelClass: snackBarClass,
     });
   }
 
-  get email() {
-    return this.forgotPasswordForm.get('email');
-  }
-
-  getEmailErrorMessage(): string {
-    if (this.email?.hasError('required')) {
-      return 'Email address is required.';
-    }
-    if (this.email?.hasError('email')) {
-      return 'Please enter a valid email address.';
-    }
-    return '';
-  }
-
-  onSubmit(): void {
-    if (this.forgotPasswordForm.invalid) return;
-
-    this.isLoading = true;
-    this.submissionError = '';
-
-    const { email } = this.forgotPasswordForm.value;
-
-    this.http
-      .post('https://localhost:40443/api/admin-forgot-password', {
-        email,
-      })
-      .subscribe({
-        next: () => {
-          this.isLoading = false;
-          alert('Password reset link sent successfully');
-          this.router.navigate(['/admin-login']);
-        },
-        error: (err) => {
-          this.isLoading = false;
-          this.submissionError =
-            'Failed to send password reset link. Please try again.';
-          console.error('There was an error!', err);
-        },
-      });
+  closeSnackbar() {
+    this.snackBar.dismiss();
   }
 }

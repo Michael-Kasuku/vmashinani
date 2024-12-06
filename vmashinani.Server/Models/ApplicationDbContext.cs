@@ -8,5 +8,7 @@ namespace vmashinani.Server.Models
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options): base(options){ }
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }
         public DbSet<Message> Messages { get; set; }
+        public DbSet<Administrator> Administrators { get; set; }
+        public DbSet<Veterinarian> Veterinarians { get; set; }
     }
 }
