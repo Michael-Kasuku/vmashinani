@@ -11,40 +11,27 @@ namespace vmashinani.Server.Controllers
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly ApplicationDbContext _context;
-        private readonly IWebHostEnvironment _env;
-        private readonly IConfiguration _configuration;
 
         public AdminController(
             ApplicationDbContext context,
             RoleManager<IdentityRole> roleManager,
-            UserManager<ApplicationUser> userManager,
-            IWebHostEnvironment env,
-            IConfiguration configuration)
+            UserManager<ApplicationUser> userManager)
         {
             _context = context;
             _roleManager = roleManager;
             _userManager = userManager;
-            _env = env;
-            _configuration = configuration;
         }
 
         [HttpPost]
         public async Task<IActionResult> CreateAdmin([FromBody] ApplicationUser newUser)
         {
             string roleAdministrator = "Administrator";
-            string rolePetOwner = "Pet Owner";
 
             // Check if the email exists in the Administrators table
             var isAdminEmailValid = _context.Administrators.Any(admin => admin.Email == newUser.Email);
             if (!isAdminEmailValid)
             {
                 return BadRequest(new { message = "You are not allowed to register as an Admin!" });
-            }
-
-            // Ensure the "Pet Owner" role exists
-            if (await _roleManager.FindByNameAsync(rolePetOwner) == null)
-            {
-                await _roleManager.CreateAsync(new IdentityRole(rolePetOwner));
             }
 
             // Ensure the "Administrator" role exists
@@ -78,13 +65,10 @@ namespace vmashinani.Server.Controllers
             // Assign the "Administrator" role
             await _userManager.AddToRoleAsync(userAdmin, roleAdministrator);
 
-            // An "Administrator" automatically becomes a Pet Owner
-            await _userManager.AddToRoleAsync(userAdmin, rolePetOwner);
-
             // Save changes again after role assignment
             await _context.SaveChangesAsync();
 
-            return Ok(new { message = "Admin Account created successfully!", user = userAdmin });
-        }
+            return Ok(new { message = "Admin Account created successfully!" });
+        }  
     }
 }

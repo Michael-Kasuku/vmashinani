@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yj5NWftohX6ynn1uOYjEnnwUzUKlGtGkbZp0iKbumKs=",
+  "Hash": "i0l5at1QzLPACfCZQFLqPm9RrhdoR74nK2yk6ossxhI=",
   "Source": "vmashinani.Server",
   "BasePath": "_content/vmashinani.Server",
   "Mode": "Default",
@@ -11,10 +11,10 @@
       "Version": 2,
       "Source": "vmashinani.client",
       "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
       "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
     }
   ],

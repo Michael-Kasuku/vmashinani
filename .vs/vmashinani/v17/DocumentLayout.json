@@ -1,12 +1,228 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2B2E41-0488-4E46-B746-49368C55696A}|vmashinani.client\\vmashinani.client.esproj|c:\\users\\michael kasuku\\documents\\computer science\\fourth year\\web development\\project\\vmashinani\\vmashinani.client\\src\\app\\auth\\auth.interceptor.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{0D2B2E41-0488-4E46-B746-49368C55696A}|vmashinani.client\\vmashinani.client.esproj|solutionrelative:vmashinani.client\\src\\app\\auth\\auth.interceptor.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2B2E41-0488-4E46-B746-49368C55696A}|vmashinani.client\\vmashinani.client.esproj|c:\\users\\michael kasuku\\documents\\computer science\\fourth year\\web development\\project\\vmashinani\\vmashinani.client\\src\\app\\admin-login\\admin-login.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{0D2B2E41-0488-4E46-B746-49368C55696A}|vmashinani.client\\vmashinani.client.esproj|solutionrelative:vmashinani.client\\src\\app\\admin-login\\admin-login.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2B2E41-0488-4E46-B746-49368C55696A}|vmashinani.client\\vmashinani.client.esproj|c:\\users\\michael kasuku\\documents\\computer science\\fourth year\\web development\\project\\vmashinani\\vmashinani.client\\src\\app\\pet-owner-login\\pet-owner-login.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{0D2B2E41-0488-4E46-B746-49368C55696A}|vmashinani.client\\vmashinani.client.esproj|solutionrelative:vmashinani.client\\src\\app\\pet-owner-login\\pet-owner-login.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2B2E41-0488-4E46-B746-49368C55696A}|vmashinani.client\\vmashinani.client.esproj|c:\\users\\michael kasuku\\documents\\computer science\\fourth year\\web development\\project\\vmashinani\\vmashinani.client\\src\\app\\admin-login\\admin-login.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0D2B2E41-0488-4E46-B746-49368C55696A}|vmashinani.client\\vmashinani.client.esproj|solutionrelative:vmashinani.client\\src\\app\\admin-login\\admin-login.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2B2E41-0488-4E46-B746-49368C55696A}|vmashinani.client\\vmashinani.client.esproj|c:\\users\\michael kasuku\\documents\\computer science\\fourth year\\web development\\project\\vmashinani\\vmashinani.client\\src\\app\\app.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{0D2B2E41-0488-4E46-B746-49368C55696A}|vmashinani.client\\vmashinani.client.esproj|solutionrelative:vmashinani.client\\src\\app\\app.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2B2E41-0488-4E46-B746-49368C55696A}|vmashinani.client\\vmashinani.client.esproj|c:\\users\\michael kasuku\\documents\\computer science\\fourth year\\web development\\project\\vmashinani\\vmashinani.client\\src\\app\\auth\\auth.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{0D2B2E41-0488-4E46-B746-49368C55696A}|vmashinani.client\\vmashinani.client.esproj|solutionrelative:vmashinani.client\\src\\app\\auth\\auth.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2B2E41-0488-4E46-B746-49368C55696A}|vmashinani.client\\vmashinani.client.esproj|c:\\users\\michael kasuku\\documents\\computer science\\fourth year\\web development\\project\\vmashinani\\vmashinani.client\\src\\environments\\environment.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{0D2B2E41-0488-4E46-B746-49368C55696A}|vmashinani.client\\vmashinani.client.esproj|solutionrelative:vmashinani.client\\src\\environments\\environment.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2B2E41-0488-4E46-B746-49368C55696A}|vmashinani.client\\vmashinani.client.esproj|c:\\users\\michael kasuku\\documents\\computer science\\fourth year\\web development\\project\\vmashinani\\vmashinani.client\\src\\app\\auth\\login-request.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{0D2B2E41-0488-4E46-B746-49368C55696A}|vmashinani.client\\vmashinani.client.esproj|solutionrelative:vmashinani.client\\src\\app\\auth\\login-request.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2B2E41-0488-4E46-B746-49368C55696A}|vmashinani.client\\vmashinani.client.esproj|c:\\users\\michael kasuku\\documents\\computer science\\fourth year\\web development\\project\\vmashinani\\vmashinani.client\\src\\app\\auth\\login-result.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{0D2B2E41-0488-4E46-B746-49368C55696A}|vmashinani.client\\vmashinani.client.esproj|solutionrelative:vmashinani.client\\src\\app\\auth\\login-result.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64CB1EB5-4151-4A98-A67B-8300F136A43E}|vmashinani.Server\\vmashinani.Server.csproj|c:\\users\\michael kasuku\\documents\\computer science\\fourth year\\web development\\project\\vmashinani\\vmashinani.server\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64CB1EB5-4151-4A98-A67B-8300F136A43E}|vmashinani.Server\\vmashinani.Server.csproj|solutionrelative:vmashinani.server\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64CB1EB5-4151-4A98-A67B-8300F136A43E}|vmashinani.Server\\vmashinani.Server.csproj|c:\\users\\michael kasuku\\documents\\computer science\\fourth year\\web development\\project\\vmashinani\\vmashinani.server\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64CB1EB5-4151-4A98-A67B-8300F136A43E}|vmashinani.Server\\vmashinani.Server.csproj|solutionrelative:vmashinani.server\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D2B2E41-0488-4E46-B746-49368C55696A}|vmashinani.client\\vmashinani.client.esproj|c:\\users\\michael kasuku\\documents\\computer science\\fourth year\\web development\\project\\vmashinani\\vmashinani.client\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{0D2B2E41-0488-4E46-B746-49368C55696A}|vmashinani.client\\vmashinani.client.esproj|solutionrelative:vmashinani.client\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "pet-owner-login.component.ts",
+              "DocumentMoniker": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.client\\src\\app\\pet-owner-login\\pet-owner-login.component.ts",
+              "RelativeDocumentMoniker": "vmashinani.client\\src\\app\\pet-owner-login\\pet-owner-login.component.ts",
+              "ToolTip": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.client\\src\\app\\pet-owner-login\\pet-owner-login.component.ts",
+              "RelativeToolTip": "vmashinani.client\\src\\app\\pet-owner-login\\pet-owner-login.component.ts",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAAB4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-06T16:32:04.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "admin-login.component.html",
+              "DocumentMoniker": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.client\\src\\app\\admin-login\\admin-login.component.html",
+              "RelativeDocumentMoniker": "vmashinani.client\\src\\app\\admin-login\\admin-login.component.html",
+              "ToolTip": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.client\\src\\app\\admin-login\\admin-login.component.html",
+              "RelativeToolTip": "vmashinani.client\\src\\app\\admin-login\\admin-login.component.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-06T15:49:10.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "auth.service.ts",
+              "DocumentMoniker": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.client\\src\\app\\auth\\auth.service.ts",
+              "RelativeDocumentMoniker": "vmashinani.client\\src\\app\\auth\\auth.service.ts",
+              "ToolTip": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.client\\src\\app\\auth\\auth.service.ts",
+              "RelativeToolTip": "vmashinani.client\\src\\app\\auth\\auth.service.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-06T15:35:53.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "admin-login.component.ts",
+              "DocumentMoniker": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.client\\src\\app\\admin-login\\admin-login.component.ts",
+              "RelativeDocumentMoniker": "vmashinani.client\\src\\app\\admin-login\\admin-login.component.ts",
+              "ToolTip": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.client\\src\\app\\admin-login\\admin-login.component.ts",
+              "RelativeToolTip": "vmashinani.client\\src\\app\\admin-login\\admin-login.component.ts",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAAEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-06T15:17:46.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "auth.interceptor.ts",
+              "DocumentMoniker": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.client\\src\\app\\auth\\auth.interceptor.ts",
+              "RelativeDocumentMoniker": "vmashinani.client\\src\\app\\auth\\auth.interceptor.ts",
+              "ToolTip": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.client\\src\\app\\auth\\auth.interceptor.ts",
+              "RelativeToolTip": "vmashinani.client\\src\\app\\auth\\auth.interceptor.ts",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAACMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-06T15:25:59.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "environment.ts",
+              "DocumentMoniker": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.client\\src\\environments\\environment.ts",
+              "RelativeDocumentMoniker": "vmashinani.client\\src\\environments\\environment.ts",
+              "ToolTip": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.client\\src\\environments\\environment.ts",
+              "RelativeToolTip": "vmashinani.client\\src\\environments\\environment.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-06T15:36:38.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "login-request.ts",
+              "DocumentMoniker": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.client\\src\\app\\auth\\login-request.ts",
+              "RelativeDocumentMoniker": "vmashinani.client\\src\\app\\auth\\login-request.ts",
+              "ToolTip": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.client\\src\\app\\auth\\login-request.ts",
+              "RelativeToolTip": "vmashinani.client\\src\\app\\auth\\login-request.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-06T15:35:50.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "app.component.ts",
+              "DocumentMoniker": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.client\\src\\app\\app.component.ts",
+              "RelativeDocumentMoniker": "vmashinani.client\\src\\app\\app.component.ts",
+              "ToolTip": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.client\\src\\app\\app.component.ts",
+              "RelativeToolTip": "vmashinani.client\\src\\app\\app.component.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-06T15:12:54.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "login-result.ts",
+              "DocumentMoniker": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.client\\src\\app\\auth\\login-result.ts",
+              "RelativeDocumentMoniker": "vmashinani.client\\src\\app\\auth\\login-result.ts",
+              "ToolTip": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.client\\src\\app\\auth\\login-result.ts",
+              "RelativeToolTip": "vmashinani.client\\src\\app\\auth\\login-result.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-06T15:35:16.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.Server\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "vmashinani.Server\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.Server\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "vmashinani.Server\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T15:34:33.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.Server\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "vmashinani.Server\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.Server\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "vmashinani.Server\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAwEkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T15:32:04.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "app.module.ts",
+              "DocumentMoniker": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.client\\src\\app\\app.module.ts",
+              "RelativeDocumentMoniker": "vmashinani.client\\src\\app\\app.module.ts",
+              "ToolTip": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\vmashinani\\vmashinani.client\\src\\app\\app.module.ts",
+              "RelativeToolTip": "vmashinani.client\\src\\app\\app.module.ts",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAuwJEAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-06T15:29:08.638Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

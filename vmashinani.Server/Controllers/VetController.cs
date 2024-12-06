@@ -11,28 +11,21 @@ namespace vmashinani.Server.Controllers
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly ApplicationDbContext _context;
-        private readonly IWebHostEnvironment _env;
-        private readonly IConfiguration _configuration;
 
         public VetController(
             ApplicationDbContext context,
             RoleManager<IdentityRole> roleManager,
-            UserManager<ApplicationUser> userManager,
-            IWebHostEnvironment env,
-            IConfiguration configuration)
+            UserManager<ApplicationUser> userManager)
         {
             _context = context;
             _roleManager = roleManager;
             _userManager = userManager;
-            _env = env;
-            _configuration = configuration;
         }
 
         [HttpPost]
         public async Task<IActionResult> CreateVet([FromBody] ApplicationUser newUser)
         {
             string roleVeterinarian = "Veterinarian";
-            string rolePetOwner = "Pet Owner";
 
             // Check if the email exists in the Veterinarians table
             var isVetEmailValid = _context.Veterinarians.Any(vet => vet.Email == newUser.Email);
@@ -45,12 +38,6 @@ namespace vmashinani.Server.Controllers
             if (await _roleManager.FindByNameAsync(roleVeterinarian) == null)
             {
                 await _roleManager.CreateAsync(new IdentityRole(roleVeterinarian));
-            }
-
-            // Ensure the "Pet Owner" role exists
-            if (await _roleManager.FindByNameAsync(rolePetOwner) == null)
-            {
-                await _roleManager.CreateAsync(new IdentityRole(rolePetOwner));
             }
 
             // Check if the user already exists
@@ -78,13 +65,10 @@ namespace vmashinani.Server.Controllers
             // Assign the "Veterinarian" role
             await _userManager.AddToRoleAsync(userVet, roleVeterinarian);
 
-            // A Veterinarian automatically becomes a Pet Owner
-            await _userManager.AddToRoleAsync(userVet, rolePetOwner);
-
             // Save changes again after role assignment
             await _context.SaveChangesAsync();
 
-            return Ok(new { message = "Vet Account created successfully!", user = userVet });
+            return Ok(new { message = "Vet Account created successfully!" });
         }
     }
 }

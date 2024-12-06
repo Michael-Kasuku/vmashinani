@@ -11,21 +11,15 @@ namespace vmashinani.Server.Controllers
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly ApplicationDbContext _context;
-        private readonly IWebHostEnvironment _env;
-        private readonly IConfiguration _configuration;
 
         public PetOwnerController(
             ApplicationDbContext context,
             RoleManager<IdentityRole> roleManager,
-            UserManager<ApplicationUser> userManager,
-            IWebHostEnvironment env,
-            IConfiguration configuration)
+            UserManager<ApplicationUser> userManager)
         {
             _context = context;
             _roleManager = roleManager;
             _userManager = userManager;
-            _env = env;
-            _configuration = configuration;
         }
 
         [HttpPost]
@@ -67,7 +61,7 @@ namespace vmashinani.Server.Controllers
             // Save changes again after role assignment
             await _context.SaveChangesAsync();
 
-            return Ok(new { message = "Pet Owner Account created successfully!", user = userPetOwner });
+            return Ok(new { message = "Pet Owner Account created successfully!" });
         }
     }
 }

@@ -42,10 +42,11 @@ export class VetSignupComponent {
     }
 
     // Password Length and Alphanumeric Validation
-    const passwordRegex = /^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
+    const passwordRegex = /^(?=.*[a-zA-Z])(?=.*\d)(?=.*[\W_])[a-zA-Z\d\W_]{8,}$/;
+
     if (!passwordRegex.test(this.formData.PasswordHash)) {
       this.openSnackbar(
-        'Password must be at least 8 characters long and contain both letters and numbers.',
+        'Password must be at least 8 characters long and contain both letters, numbers and special symbols.',
         'error'
       );
       return;

@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { AuthService } from '../auth/auth.service';
+import { LoginRequest } from '../auth/login-request';
+import { LoginResult } from '../auth/login-result';
 
 @Component({
   selector: 'app-admin-login',
@@ -10,47 +13,45 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   styleUrls: ['./admin-login.component.scss'],
 })
 export class AdminLoginComponent {
+  title?: string;
+  loginResult?: LoginResult;
+
   formData = {
     Email: '',
-    PasswordHash: '',
+    Password: '',
   };
 
   constructor(
-    private http: HttpClient,
+    private activatedRoute: ActivatedRoute,
+    private router: Router,
+    private authService: AuthService,
     private snackBar: MatSnackBar,
-    private router: Router
   ) { }
 
-  handleLogin(event: Event) {
-    event.preventDefault();
-
+  handleLogin() {
     // Basic Validation
-    if (!this.formData.Email || !this.formData.PasswordHash) {
+    if (!this.formData.Email || !this.formData.Password) {
       this.openSnackbar('Both fields are required.', 'error');
       return;
     }
 
-    // HTTP Request for Login
-    this.http.post('https://localhost:40443/api/admin/login', {
-      Email: this.formData.Email,
-      PasswordHash: this.formData.PasswordHash,
-    })
-      .subscribe(
-        (response: any) => {
-          // Handle successful login, assuming a token is returned
-          localStorage.setItem('adminToken', response.token); // Save the token locally
+    var loginRequest = <LoginRequest>{};
+    loginRequest.Email = this.formData.Email;
+    loginRequest.Password = this.formData.Password;
+
+    this.authService
+      .login(loginRequest)
+      .subscribe({
+        next: (result) => {
+          this.loginResult = result
           this.openSnackbar('Login successful!', 'success');
-          this.router.navigate(['/admin-dashboard']); // Redirect to admin dashboard
+          this.router.navigate(["/admin-dashboard"]);
         },
-        (error) => {
-          // Handle error response
-          if (error.error && error.error.message) {
-            this.openSnackbar(error.error.message, 'error');
-          } else {
-            this.openSnackbar('Login failed. Please check your credentials.', 'error');
+        error: (error) => {
+          this.openSnackbar('Login failed. Please check your credentials.', 'error');
+          return;
           }
-        }
-      );
+      });
   }
 
   openSnackbar(message: string, severity: 'success' | 'error') {
