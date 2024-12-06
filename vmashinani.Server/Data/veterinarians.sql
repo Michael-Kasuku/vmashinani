@@ -1,5 +1,5 @@
-INSERT INTO Veterinarians(Id,Email) VALUES 
-(1, 'josphine.vet@example.com'),
-(2, 'michael.vet@example.com'),
-(3, 'lopez.vet@example.com');
+INSERT INTO Veterinarians(Email) VALUES 
+('josphine.vet@example.com'),
+('michael.vet@example.com'),
+('lopez.vet@example.com');
 GO
