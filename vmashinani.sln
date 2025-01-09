@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35219.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vmashinani.Server", "vmashinani.Server\vmashinani.Server.csproj", "{64CB1EB5-4151-4A98-A67B-8300F136A43E}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "vmashinani.client", "vmashinani.client\vmashinani.client.esproj", "{0D2B2E41-0488-4E46-B746-49368C55696A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64CB1EB5-4151-4A98-A67B-8300F136A43E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64CB1EB5-4151-4A98-A67B-8300F136A43E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64CB1EB5-4151-4A98-A67B-8300F136A43E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64CB1EB5-4151-4A98-A67B-8300F136A43E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D2B2E41-0488-4E46-B746-49368C55696A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D2B2E41-0488-4E46-B746-49368C55696A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D2B2E41-0488-4E46-B746-49368C55696A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0D2B2E41-0488-4E46-B746-49368C55696A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D2B2E41-0488-4E46-B746-49368C55696A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D2B2E41-0488-4E46-B746-49368C55696A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {92ACFD6B-CBC4-4DF3-A4B7-E6AECD82FFD2}
+	EndGlobalSection
+EndGlobal

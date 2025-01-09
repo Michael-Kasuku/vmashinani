@@ -1,0 +1,29 @@
+{
+  "name": "Vet Mashinani",
+  "short_name": "VMashinani",
+  "description": "Bridging the Gap in Veterinary Services",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/img/vmashinani.ico",
+      "sizes": "192x192",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/img/vmashinani.ico",
+      "sizes": "512x512",
+      "type": "image/x-icon"
+    }
+  ],
+  "lang": "en",
+  "dir": "ltr",
+  "orientation": "any",
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "scope": "/",
+  "categories": [ "Veterinary", "Health", "Animals" ],
+  "iarc_rating_id": "18+"
+}

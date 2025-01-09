@@ -1,0 +1,19 @@
+<mat-toolbar color="primary" class="header-toolbar">
+  <span class="title">Vet Mashinani</span>
+  <!-- Profile Menu -->
+  <button mat-icon-button [matMenuTriggerFor]="profileMenu" aria-label="Profile" class="profile-button">
+    <img [src]="profileImage" alt="Profile" class="profile-image">
+  </button>
+
+  <mat-menu #profileMenu="matMenu" class="profile-menu">
+    <button mat-menu-item (click)="goToProfile()">My Profile</button>
+    <button mat-menu-item (click)="onLogout()">Logout</button>
+  </mat-menu>
+</mat-toolbar>
+
+<!-- Horizontal Navigation Menu -->
+<mat-tab-group [(selectedIndex)]="activeTab" class="tab-group">
+  <mat-tab label="Vets">
+    <app-pet-owner-vet-profiles></app-pet-owner-vet-profiles>
+  </mat-tab>
+</mat-tab-group>

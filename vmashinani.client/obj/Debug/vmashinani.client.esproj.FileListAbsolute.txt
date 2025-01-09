@@ -1,0 +1,2 @@
+C:\Users\Michael Kasuku\Documents\Computer Science\fourth year\Web Development\Project\vmashinani\vmashinani.client\obj\Debug\vmashinani.client.esproj.CoreCompileInputs.cache
+C:\Users\Michael Kasuku\Documents\Computer Science\fourth year\Web Development\Project\vmashinani\vmashinani\vmashinani.client\obj\Debug\vmashinani.client.esproj.CoreCompileInputs.cache

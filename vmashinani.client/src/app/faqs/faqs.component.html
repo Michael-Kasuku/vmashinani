@@ -1,0 +1,20 @@
+<section id="faq" class="faq-container">
+  <div class="faq-intro">
+    <h3>Have Questions? We've Got Answers!</h3>
+    <p>
+      At Vet Mashinani, we are dedicated to making pet care accessible and stress-free.
+      Below, you can find answers to frequently asked questions.
+    </p>
+  </div>
+
+  <mat-accordion>
+    <mat-expansion-panel *ngFor="let faq of faqItems; let i = index" [expanded]="expandedIndex === i" (opened)="toggleFAQ(i)">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{ faq.question }}
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>{{ faq.answer }}</p> <!-- Removed mat-expansion-panel-body -->
+    </mat-expansion-panel>
+  </mat-accordion>
+</section>

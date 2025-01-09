@@ -1,0 +1,33 @@
+<section id="contact" class="contact-section">
+  <div class="container-lg contact-content">
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <p>Have questions or feedback? Drop us a message, and we’ll get back to you promptly.</p>
+      <form (ngSubmit)="handleSubmit($event)">
+        <mat-form-field appearance="fill" class="form-group">
+          <mat-label>Your Name</mat-label>
+          <input matInput type="text" name="Name" [(ngModel)]="formData.Name" placeholder="Enter your full name" required />
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="form-group">
+          <mat-label>Your Email</mat-label>
+          <input matInput type="email" name="Email" [(ngModel)]="formData.Email" placeholder="Enter your email address" required />
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="form-group">
+          <mat-label>Subject</mat-label>
+          <input matInput type="text" name="Subject" [(ngModel)]="formData.Subject" placeholder="Enter the subject" required />
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="form-group">
+          <mat-label>Message</mat-label>
+          <textarea matInput name="Content" [(ngModel)]="formData.Content" placeholder="Write your message here" rows="5" required></textarea>
+        </mat-form-field>
+
+        <div class="form-group text-center">
+          <button mat-raised-button color="primary" type="submit">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

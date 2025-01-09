@@ -1,0 +1,15 @@
+<section class="terms-container">
+  <h1 class="title">Terms and Conditions</h1>
+
+  <mat-accordion class="terms-accordion">
+    <mat-expansion-panel *ngFor="let term of terms" hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>{{ term.title }}</mat-panel-title>
+      </mat-expansion-panel-header>
+      <div class="term-text-wrapper">
+        <p class="term-text">{{ term.text }}</p>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+
+</section>

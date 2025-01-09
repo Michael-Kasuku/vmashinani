@@ -1,0 +1,32 @@
+<section class="container py-5">
+  <div class="mat-elevation-z8">
+    <div class="row">
+      <!-- Search Input -->
+      <input type="text" [(ngModel)]="searchQuery" (input)="onSearch()" placeholder="Search by name or location" class="search-input">
+
+      <mat-card class="mat-card" *ngFor="let vet of filteredProfiles">
+        <mat-card-header class="mat-card-header">
+          <img mat-card-avatar
+               [src]="getProfileImageUrl(vet)"
+               alt="{{ vet.name }}'s profile"
+               class="vet-profile-img">
+          <mat-card-title>{{ vet.name }}</mat-card-title>
+          <mat-card-subtitle>{{ vet.jobTitle }}</mat-card-subtitle>
+        </mat-card-header>
+
+        <mat-card-content>
+          <p><strong>Location:</strong> {{ vet.location }}</p>
+        </mat-card-content>
+
+        <mat-card-actions>
+          <button mat-raised-button
+                  color="primary"
+                  class="btn-book"
+                  (click)="message(vet)">
+            Messages
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</section>

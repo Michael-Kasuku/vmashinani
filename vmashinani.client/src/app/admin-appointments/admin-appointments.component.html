@@ -1,0 +1,33 @@
+<div class="analytics">
+  <!-- Approved Count Card -->
+  <mat-card class="analytics-item approved" *ngIf="approvedCount !== undefined">
+    <mat-card-content>
+      <span>Total Approved:</span>
+      <strong class="mat-display-2">{{ approvedCount }}</strong>
+    </mat-card-content>
+  </mat-card>
+
+  <!-- Canceled Count Card -->
+  <mat-card class="analytics-item canceled" *ngIf="canceledCount !== undefined">
+    <mat-card-content>
+      <span>Total Canceled:</span>
+      <strong class="mat-display-2">{{ canceledCount }}</strong>
+    </mat-card-content>
+  </mat-card>
+
+  <!-- Pending Count Card -->
+  <mat-card class="analytics-item pending" *ngIf="pendingCount !== undefined">
+    <mat-card-content>
+      <span>Total Pending:</span>
+      <strong class="mat-display-2">{{ pendingCount }}</strong>
+    </mat-card-content>
+  </mat-card>
+
+  <!-- Total Remarks Card -->
+  <mat-card class="analytics-item remarks" *ngIf="totalRemarks !== undefined">
+    <mat-card-content>
+      <span>Total Remarks:</span>
+      <strong class="mat-display-2">{{ totalRemarks }}</strong>
+    </mat-card-content>
+  </mat-card>
+</div>

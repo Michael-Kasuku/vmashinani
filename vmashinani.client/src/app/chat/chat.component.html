@@ -1,0 +1,28 @@
+<div class="container py-4 chat-container">
+  <div class="chat-header d-flex justify-content-between align-items-center mb-3">
+    <div class="vet-info d-flex align-items-center">
+      <h5 class="ms-3">{{ selectedVet.name }}</h5>
+    </div>
+  </div>
+
+  <div class="chat-body">
+    <div *ngFor="let date of objectKeys(messages)">
+      <h6 class="date-header">{{ date }}</h6>
+      <div *ngFor="let message of messages[date]"
+           [ngClass]="{'user-message': message.sender === currentUserEmail, 'vet-message': message.sender !== currentUserEmail}">
+        <div class="message-content">
+          <p>{{ message.content }}</p>
+          <small>{{ message.timestamp | date: 'shortTime' }}</small>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="chat-footer mt-3">
+    <div class="input-group">
+      <input type="text" class="form-control" [(ngModel)]="newMessage" placeholder="Type a message...">
+      <button class="btn btn-primary" (click)="sendMessage()">Send</button>
+    </div>
+  </div>
+</div>

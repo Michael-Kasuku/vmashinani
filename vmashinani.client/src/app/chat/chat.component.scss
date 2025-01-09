@@ -1,0 +1,124 @@
+// Updated SCSS for a professional chatting interface
+.chat-container {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fefefe;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  .chat-header {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    background-color: #f1f5f9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .vet-info {
+      display: flex;
+      align-items: center;
+
+      h5 {
+        margin: 0 0 0 1rem;
+        font-weight: bold;
+        color: #333;
+      }
+    }
+  }
+
+  .chat-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1.5rem;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+
+    .date-header {
+      text-align: center;
+      margin: 1rem 0;
+      font-size: 0.9rem;
+      color: #888;
+      font-weight: 500;
+    }
+
+    .user-message,
+    .vet-message {
+      margin-bottom: 1rem;
+      max-width: 75%;
+      padding: 0.8rem 1.2rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      word-wrap: break-word;
+
+      p {
+        margin: 0;
+      }
+
+      small {
+        font-size: 0.75rem;
+        color: #6c757d;
+        margin-top: 0.3rem;
+        display: block;
+        text-align: right;
+      }
+    }
+
+    .user-message {
+      align-self: flex-end;
+      background-color: #007bff;
+      color: white;
+      border-radius: 20px 20px 0 20px;
+    }
+
+    .vet-message {
+      align-self: flex-start;
+      background-color: #e9ecef;
+      color: #212529;
+      border-radius: 20px 20px 20px 0;
+    }
+  }
+
+  .chat-footer {
+    padding: 1rem;
+    border-top: 1px solid #ddd;
+    background-color: #f1f5f9;
+
+    .input-group {
+      display: flex;
+
+      input {
+        flex: 1;
+        padding: 0.8rem;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        outline: none;
+        font-size: 0.9rem;
+
+        &:focus {
+          border-color: #007bff;
+          box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+        }
+      }
+
+      button {
+        margin-left: 0.5rem;
+        padding: 0.8rem 1.2rem;
+        border: none;
+        background-color: #007bff;
+        color: white;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
+  }
+}

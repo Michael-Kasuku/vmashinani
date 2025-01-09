@@ -1,0 +1,134 @@
+/* General Styles */
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Search and Sort Styles */
+.search-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.sort-dropdown {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Profile Image */
+.vet-profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Row Styling */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+/* Card Styling */
+.mat-card {
+  flex: 1 1 calc(33.333% - 1.5rem);
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mat-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Header */
+.mat-card-header {
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #eee;
+}
+
+.mat-card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin: 8px 0;
+}
+
+.mat-card-subtitle {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Card Content */
+.mat-card-content {
+  padding: 16px;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Button Styling */
+.btn-book {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-book:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .mat-card {
+    flex: 1 1 calc(50% - 1.5rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .mat-card {
+    flex: 1 1 calc(100% - 1.5rem);
+  }
+
+  .vet-profile-img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .mat-card-title {
+    font-size: 1.1rem;
+  }
+
+  .mat-card-subtitle {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .vet-profile-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .btn-book {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
